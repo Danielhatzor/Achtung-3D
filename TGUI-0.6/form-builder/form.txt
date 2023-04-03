@@ -1,0 +1,54 @@
+Window:
+{
+	Picture: "Picture1"
+	{
+		Filename = "TGUI-0.6/form-builder/images/EmptyPicture.png"
+		Left = 0
+		Top = 0
+		Width = 420
+		Height = 420
+		Visible = true
+		Enabled = true
+		Focused = false
+		Transparency = 255
+		CallbackId = 0
+		Smooth = false
+	}
+
+	Button: "Button1"
+	{
+		ConfigFile = "TGUI-0.6/form-builder/widgets/White.conf"
+		Left = 50
+		Top = 70
+		Width = 121
+		Height = 30
+		Visible = true
+		Enabled = true
+		Focused = false
+		Transparency = 255
+		CallbackId = 0
+		Text = "hi"
+		TextColor = (0,0,0,255)
+		TextSize = 22
+	}
+
+	Label: "Label1"
+	{
+		ConfigFile = "TGUI-0.6/form-builder/widgets/White.conf"
+		Left = 80
+		Top = 40
+		Width = 38
+		Height = 23
+		Visible = true
+		Enabled = true
+		Focused = false
+		Transparency = 255
+		CallbackId = 0
+		Text = "Lol"
+		TextColor = (255,255,255,255)
+		TextSize = 30
+		BackgroundColor = (0,0,0,0)
+		AutoSize = true
+	}
+
+}

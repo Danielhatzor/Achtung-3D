@@ -1,0 +1,51 @@
+﻿Build started 23/04/2020 03:55:02.
+     1>Project "D:\Documents\Visual Studio 2013\Projects\sfml\sfml\sfml.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Documents\Visual Studio 2013\Projects\sfml\sfml\TGUI-0.6\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Bot.cpp
+         Bot.cpp
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\Constants1.h(68): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\Constants1.h(79): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\Constants1.h(83): warning C4244: 'initializing' : conversion from 'const double' to 'const int', possible loss of data
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\Constants1.h(84): warning C4244: 'initializing' : conversion from 'const float' to 'const int', possible loss of data
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\Constants1.h(86): warning C4244: 'initializing' : conversion from 'const double' to 'const int', possible loss of data
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\Constants1.h(87): warning C4244: 'initializing' : conversion from 'float' to 'const int', possible loss of data
+     1>Bot.cpp(31): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio 2013\Projects\sfml\Release\sfml.exe" /NOLOGO "sfml-graphics.lib" "sfml-window.lib" "sfml-audio.lib" "sfml-system.lib" "sfml-main.lib" "sfml-network.lib" tgui.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Documents\Visual Studio 2013\Projects\sfml\Release\sfml.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio 2013\Projects\sfml\Release\sfml.lib" /MACHINE:X86 /SAFESEH Release\Bot.obj
+         Release\BotBrain.obj
+         Release\Camera.obj
+         Release\Client.obj
+         Release\ClientGui.obj
+         Release\CollisionMap.obj
+         Release\CommunicationBox.obj
+         Release\CoolMat.obj
+         Release\ClientCurve.obj
+         Release\Curve.obj
+         Release\CurveCollection.obj
+         Release\CurvePath.obj
+         Release\FuturePositions.obj
+         Release\LocalCurve.obj
+         Release\Match.obj
+         Release\Material.obj
+         Release\Menu.obj
+         Release\MinMax.obj
+         Release\MyMat.obj
+         Release\Patterns.obj
+         Release\SConBox.obj
+         Release\ScoreGui.obj
+         Release\SCurve.obj
+         Release\SCurveCollection.obj
+         Release\SMatch.obj
+         Release\Source1.obj
+         Release\Sphere.obj
+         Generating code
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\sconbox.cpp(41): warning C4715: 'SConBox::operator[]' : not all control paths return a value
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\curvecollection.cpp(36): warning C4715: 'CurveCollection::operator[]' : not all control paths return a value
+     1>d:\documents\visual studio 2013\projects\sfml\sfml\scurvecollection.cpp(50): warning C4715: 'SCurveCollection::operator[]' : not all control paths return a value
+         Finished generating code
+         sfml.vcxproj -> D:\Documents\Visual Studio 2013\Projects\sfml\Release\sfml.exe
+     1>Done Building Project "D:\Documents\Visual Studio 2013\Projects\sfml\sfml\sfml.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.42

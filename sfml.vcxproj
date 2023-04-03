@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{68A7F81F-1142-4D59-871E-986FFC802ECB}</ProjectGuid>
+    <RootNamespace>sfml</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\SFML-2.3.2\include;D:\Documents\Visual Studio 2013\Projects\sfml\sfml\TGUI-0.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SFML-2.3.2\lib;D:\Documents\Visual Studio 2013\Projects\sfml\sfml\TGUI-0.6\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\SFML-2.3.2\include;D:\Documents\Visual Studio 2013\Projects\sfml\sfml\TGUI-0.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SFML-2.3.2\lib;D:\Documents\Visual Studio 2013\Projects\sfml\sfml\TGUI-0.6\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Documents\Visual Studio 2013\Projects\sfml\sfml\TGUI-0.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-main-d.lib;sfml-network-d.lib;sfml-audio-d.lib;tgui-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Documents\Visual Studio 2013\Projects\sfml\sfml\TGUI-0.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-audio.lib;sfml-system.lib;sfml-main.lib;sfml-network.lib;tgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bot.cpp" />
+    <ClCompile Include="BotBrain.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="ClientGui.cpp" />
+    <ClCompile Include="CollisionMap.cpp" />
+    <ClCompile Include="CommunicationBox.cpp" />
+    <ClCompile Include="CoolMat.cpp" />
+    <ClCompile Include="ClientCurve.cpp" />
+    <ClCompile Include="Curve.cpp" />
+    <ClCompile Include="CurveCollection.cpp" />
+    <ClCompile Include="CurvePath.cpp" />
+    <ClCompile Include="FuturePositions.cpp" />
+    <ClCompile Include="LocalCurve.cpp" />
+    <ClCompile Include="Match.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MinMax.cpp" />
+    <ClCompile Include="MyMat.cpp" />
+    <ClCompile Include="Patterns.cpp" />
+    <ClCompile Include="SConBox.cpp" />
+    <ClCompile Include="ScoreGui.cpp" />
+    <ClCompile Include="SCurve.cpp" />
+    <ClCompile Include="SCurveCollection.cpp" />
+    <ClCompile Include="SMatch.cpp" />
+    <ClCompile Include="Source1.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bot.h" />
+    <ClInclude Include="BotBrain.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="ClientGui.h" />
+    <ClInclude Include="CollisionMap.h" />
+    <ClInclude Include="CommunicationBox.h" />
+    <ClInclude Include="Constants1.h" />
+    <ClInclude Include="CoolMat.h" />
+    <ClInclude Include="ClientCurve.h" />
+    <ClInclude Include="Curve.h" />
+    <ClInclude Include="CurveCollection.h" />
+    <ClInclude Include="CurvePath.h" />
+    <ClInclude Include="FuturePositions.h" />
+    <ClInclude Include="IMatch.h" />
+    <ClInclude Include="LocalCurve.h" />
+    <ClInclude Include="Match.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MinMax.h" />
+    <ClInclude Include="MyMat.h" />
+    <ClInclude Include="Patterns.h" />
+    <ClInclude Include="SConBox.h" />
+    <ClInclude Include="ScoreGui.h" />
+    <ClInclude Include="SCurve.h" />
+    <ClInclude Include="SCurveCollection.h" />
+    <ClInclude Include="SMatch.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="Globals.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram11.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
