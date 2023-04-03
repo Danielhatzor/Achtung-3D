@@ -3,6 +3,7 @@ Release/
 TGUI-0.6/
 sfml.vcxproj
 sfml.vcxproj.filters
+*.cd
 
 # Prerequisites
 *.d
