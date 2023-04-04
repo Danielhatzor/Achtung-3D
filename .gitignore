@@ -1,8 +1,13 @@
 Debug/
 Release/
-TGUI-0.6/
-sfml.vcxproj
-sfml.vcxproj.filters
+sfml/Debug/
+sfml/Release/
+sfml/TGUI-0.6/
+sfml/sfml.vcxproj
+sfml/sfml.vcxproj.filters
+sfml.sdf
+sfml.sln
+sfml.v12.suo
 *.cd
 
 # Prerequisites
